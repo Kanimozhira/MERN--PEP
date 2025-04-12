@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registration Form</title>
+</head>
+<body>
+  <h2>Registration Form</h2>
+  <form action="/submit" method="POST">
+    <label>First Name:</label><br />
+    <input type="text" name="firstName" required /><br /><br />
+
+    <label>Date of Birth (DOB):</label><br />
+    <input type="date" name="dob" required /><br /><br />
+
+    <label>Department:</label><br />
+    <select name="department" required>
+      <option value="">-- Select Department --</option>
+      <option value="CSE">CSE</option>
+      <option value="ECE">ECE</option>
+      <option value="EEE">EEE</option>
+      <option value="Mechanical">Mechanical</option>
+    </select><br /><br />
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
